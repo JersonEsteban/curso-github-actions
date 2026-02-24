@@ -1,0 +1,13 @@
+name: Aprendiendo GitHub Actions
+run-name: ¡Estoy aprendiendo GitHu Actions!
+on:
+  [push]
+jobs:
+  hola-mundo:
+    name: Hola Mundo
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkokut
+        uses: actions/checkout@v4
+      - name: Ejecutar index.js
+        run: node index.js
